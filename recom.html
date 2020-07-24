@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BookStrap | Your Recommendations</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+    <!-- Header -->
+    <div id="nav">
+      <div id="nav_wrapper">
+        <ul>
+          <li><a href="browse.html" style="font-weight: 600;">Browse Category</a>
+            <ul style="z-index: 5;">
+              <li><a href="classic.html">Classics</a></li>
+              <li><a href="fantasy.html">Fantasy</a></li>
+              <li><a href="fic.html">Fiction</a></li>
+              <li><a href="novel.html">Graphic Novels/Comics</a></li>
+              <li><a href="horror.html">Horror</a></li>
+              <li><a href="mystery.html">Mystery</a></li>
+              <li><a href="romance.html">Romance</a></li>
+              <li><a href="sci-fi.html">Science Fiction</a></li>
+              <li><a href="thriller.html">Thriller</a></li>
+              <li><a href="ya.html">Young Adult</a></li>
+            </ul></li><li>
+          <a href="recom.html" style="font-weight: 600;">Your Recommendations</a></li><li>
+          <a href="" style="width: 865px!important;" class="no_hover"></a></li><li>
+          <a href="index.html" class="logo" style="font-weight: 600;">Book<span style="color: #6E81C1">Strap</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Header Text -->
+    <div style="text-align: center!important; justify-content: space-evenly!important;">
+      <h1 class="h1 topager" style="font-size: 30px!important; border-style: none!important;">Your Recommendations</h1>
+      <p>Please take the quiz below!</p>
+    </div>
+    <!-- Quiz -->
+    <form style="background-color: skyblue; width: 50%; border-radius: 10px; margin-left: auto; margin-right: auto; height: fit-content; border-radius: 10px;padding: 5px;padding-top: 2px!important;padding-left: 100px; padding-right: 100px;">
+      <div>
+        <h1> Quiz </h1>
+        <label for="name">Your Name:</label>
+        <input type="text" id="firstName">
+      </div>
+      <div>
+        <h2>Preferred Genres</h2>
+        <input class="dada" type="checkbox" id="classics" value="Classics">
+        <label for="classics">Classics</label>
+        <br>
+        <input class="dada" type="checkbox" id="comics" value="Comics">
+        <label for="comics">Comics</label>
+        <br>
+        <input class="dada" type="checkbox" id="fantasy" value="Fantasy">
+        <label for="fantasy">Fantasy</label>
+        <br>
+        <input class="dada" type="checkbox" id="fiction" value="Fiction">
+        <label for="fiction">Fiction</label>
+        <br>
+        <input class="dada" type="checkbox" id="graphnovel" value="Graphic-Novels">
+        <label for="graphnovel">Graphic Novels</label>
+        <br>
+        <input class="dada" type="checkbox" id="horror" value="Horror">
+        <label for="horror">Horror</label>
+        <br>
+        <input class="dada" type="checkbox" id="mystery" value="Mystery">
+        <label for="mystery">Mystery</label>
+        <br>
+        <input class="dada" type="checkbox" id="romance" value="Romance">
+        <label for="romance">Romance</label>
+        <br>
+        <input class="dada" type="checkbox" id="scifi" value="Science-Fiction">
+        <label for="scifi">Science Fiction</label>
+        <br>
+        <input class="dada" type="checkbox" id="thriller" value="Thriller">
+        <label for="thriller">Thriller</label>
+        <br>
+        <input class="dada" type="checkbox" id="ya" value="Young-Adult">
+        <label for="ya">Young Adult</label>
+      </div>
+      <div>
+        <h1></h1>
+        <input type="button" value="Submit" id="submit" style="font-size: 100px; padding-top: 50px; padding-bottom: 50px;">
+      </div>
+      <div>
+        <p id="result"></p>
+      </div>
+    </form>
+
+    <!-- Books -->
+    <section class="carousel">
+      <div class="carousel__container">
+        <!-- The Name of the Wind -->
+        <div class="carousel-item genre-fantasy hidden">
+          <img class="carousel-item__img" src="https://prodimage.images-bn.com/pimages/9780316310321_p0_v1_s550x406.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href="books/thenameofthewind.html">The Name of the Wind</a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href="fantasy.html">Fantasy</a></h6>
+          </div>
+        </div>
+        <!-- Shout -->
+        <div class="carousel-item genre-mystery hidden">
+          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2F3e820720-202e-44d4-abe7-1ccc783f6ae6.image.png?v=1595274535581"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href="shout.html">Shout</a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href="mystery.html">Mystery</a></h6>
+          </div>
+        </div>
+        <!-- The Testaments -->
+        <div class="carousel-item genre-science-fiction hidden">
+          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2Fed6e080c-16d1-4caf-82d3-3c36c43881ff.image.png?v=1595274803820"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href="thetestaments.html">The Testaments</a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href="sci-fi.html">Science Fiction</a></h6>
+          </div>
+        </div>
+        <!-- The Institute -->
+        <div class="carousel-item genre-horror genre-science-fiction genre-thriller hidden">
+          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2Fb42aa779-ffe0-4b5d-9c80-5a427d6896df.image.png?v=1595275610531"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href="theinstitute.html">The Institute</a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href="horror.html">Horror</a>, <a href="sci-fi.html">Science Fiction</a>, <a href="genre-thriller">Thriller</a></h6>
+          </div>
+        </div>
+        <!-- The Wicked King -->
+        <div class="carousel-item genre-fantasy genre-young-adult hidden">
+          <img class="carousel-item__img" src="https://prodimage.images-bn.com/pimages/9780316310321_p0_v1_s550x406.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href="thewickedking.html">The Wicked King</a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href="fantasy.html">Fantasy</a>, <a href="ya.html">Young Adult</a></h6>
+          </div>
+        </div>
+        <!-- The Silent Patient -->
+        <div class="carousel-item genre-mystery genre-thriller hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/61AFJnUo3mL.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href="thesilentpatient.html">The Silent Patient</a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href="mystery.html">Mystery</a>, <a href="thriller.html">Thriller</a></h6>
+          </div>
+        </div>
+        <!-- Recursion -->
+        <div class="carousel-item genre-science-fiction hidden">
+          <img class="carousel-item__img" src="https://images.penguinrandomhouse.com/cover/9781524759797"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href="recursion.html">Recursion</a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href="sci-fi.html">Science Fiction</a></h6>
+          </div>
+        </div>
+        <!-- The Tyrant's Tomb -->
+        <div class="carousel-item genre-fiction hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/91UnxEI-Z5L.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href="thetyrantstomb.html">The Tyrant's Tomb</a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href="fic.html">Fiction</a></h6>
+          </div>
+        </div>
+        <!-- Pumpkinheads -->
+        <div class="carousel-item genre-graphic-novels hidden">
+          <img class="carousel-item__img" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1552060459l/44306231._SX318_.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href="pumpkinheads.html">Pumpkinheads</a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href="novel.html">Graphic Novel</a></h6>
+          </div>
+        </div>
+        <!-- Daisy Jones & The Six -->
+        <div class="carousel-item genre-fiction genre-romance hidden">
+          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2F320bd362-3d33-41eb-bc87-8c72d7f384b3.image.png?v=1595276002590"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href="daisyjonesandthesix.html">Daisy Jones & The Six</a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href="fic.html">Fiction</a>, <a href="romance.html">Romance</a></h6>
+          </div>
+        </div>
+        <!-- The Heartbreakers -->
+        <div class="carousel-item genre-fiction genre-romance hidden">
+          <img class="carousel-item__img" src="https://m.media-amazon.com/images/I/51vhejJoziL.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href="theheartbreakers.html">The Heartbreakers</a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href="fic.html">Fiction</a>, <a href="romance.html">Romance</a></h6>
+          </div>
+        </div>
+        <!-- 13 Gifts -->
+        <div class="carousel-item genre-fiction hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/71+nP8c5R9L.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href="thirteengifts.html">13 Gifts</a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href="fic.html">Fiction</a></h6>
+          </div>
+        </div>
+        <!--  -->
+        <div class="carousel-item genre-fantasy hidden">
+          <img class="carousel-item__img" src=""/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href=""></a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
+          </div>
+        </div>
+        <!-- The Call of the Wild -->
+        <div class="carousel-item genre-classic hidden">
+          <img class="carousel-item__img" src=""/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href=""></a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
+          </div>
+        </div>
+        <!--  -->
+        <div class="carousel-item genre-fantasy hidden">
+          <img class="carousel-item__img" src=""/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href=""></a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
+          </div>
+        </div>
+        <!--  -->
+        <div class="carousel-item genre-fantasy hidden">
+          <img class="carousel-item__img" src=""/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href=""></a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
+          </div>
+        </div>
+        <!--  -->
+        <div class="carousel-item genre-fantasy hidden">
+          <img class="carousel-item__img" src=""/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href=""></a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
+          </div>
+        </div>
+        <!--  -->
+        <div class="carousel-item genre-fantasy hidden">
+          <img class="carousel-item__img" src=""/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href=""></a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
+          </div>
+        </div>
+        <!--  -->
+        <div class="carousel-item genre-fantasy hidden">
+          <img class="carousel-item__img" src=""/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href=""></a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
+          </div>
+        </div>
+        <!--  -->
+        <div class="carousel-item genre-fantasy hidden">
+          <img class="carousel-item__img" src=""/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href=""></a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
+          </div>
+        </div>
+        <!--  -->
+        <div class="carousel-item genre-fantasy hidden">
+          <img class="carousel-item__img" src=""/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href=""></a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
+          </div>
+        </div>
+        <!--  -->
+        <div class="carousel-item genre-fantasy hidden">
+          <img class="carousel-item__img" src=""/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h5 class="carousel-item__details--title"><a href=""></a></h5>
+            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
+          </div>
+        </div>
+    </section>
+
+    <script>
+      submit.onclick = function() {
+        result.innerHTML = ""
+        if (name.value == "") {
+          result.innerHTML += "The name field is required!"
+          return
+        } 
+        else {
+          result.innerHTML += "Hi "
+          result.innerHTML += firstName.value + "!"
+          result.innerHTML += "<br><br>"
+        }
+        result.innerHTML += "<br><br>"
+
+        checked = document.querySelectorAll('input[type="checkbox"]:checked') 
+        console.log(checked)
+
+        allBooks = document.querySelectorAll('.carousel-item')
+        allBooks.forEach(function(book) {
+          book.classList.add("hidden")
+        })
+
+        checked.forEach(function(cb) {
+          className = ".genre-" + cb.value.toLowerCase()
+          books = document.querySelectorAll(className)
+          books.forEach(function(book) {
+            book.classList.remove("hidden")
+          })
+        })
+      }
+
+      function printCB(box) {
+        if (box.checked) {
+          return box.value + " "
+        } 
+        else {
+          return ""
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+.left_temp{
+  width:30%;
+  height:600px;
+  margin-top:50px;
+  margin-left:50px;
+  background-size: 100% 100%;
+  overflow-y:hidden;
+  float:left;
+}
+.right_temp{
+  width:55%;
+  height:600px;
+  margin-top:50px;
+  margin-right:50px;
+  background-color:gray;
+  float:right;
+}
+.tittle{
+  margin-left:30px;
+  margin-top:45px;
+  vertical-align:top;
+  height:59px;
+}
+.desc{
+  margin-top:15px;
+  margin-right:65px;
+  margin-left:65px;
+}
+.linky {
+  text-decoration: none;
+  color: inherit;
+  :visited {
+    color: inherit
+  }
+}
+.linky:hover {
+  color: #099;
+}
+.resources {
+  margin-top: 50px;
+}
+p{
+  font-size:19px;
+}
+/*
+
+
+
+*/
