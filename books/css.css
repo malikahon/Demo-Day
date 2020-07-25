@@ -9,11 +9,13 @@
 }
 .right_temp{
   width:55%;
-  height:600px;
+  height: fit-content;
   margin-top:50px;
   margin-right:50px;
-  background-color:gray;
+  background-color:lightgray;
   float:right;
+  margin-bottom:70px;
+  
 }
 .tittle{
   margin-left:30px;
@@ -41,6 +43,13 @@
 }
 p{
   font-size:19px;
+}
+.genres {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+.carousel-item__details--title a:hover, .carousel-item__details--subtitle a:hover {
+  color: #099;
 }
 /*
 

@@ -38,7 +38,7 @@
     </div>
     <!-- Header Text -->
     <div style="text-align: center!important; justify-content: space-evenly!important;">
-      <h1 class="h1 topager" style="font-size: 30px!important; border-style: none!important;">Your Recommendations</h1>
+      <h1 id="result" class="h1 topager" style="font-size: 30px!important; border-style: none!important;">Your Recommendations</h1>
       <p>Please take the quiz below!</p>
     </div>
     <!-- Quiz -->
@@ -53,246 +53,580 @@
         <input class="dada" type="checkbox" id="classics" value="Classics">
         <label for="classics">Classics</label>
         <br>
+        <br>
         <input class="dada" type="checkbox" id="comics" value="Comics">
         <label for="comics">Comics</label>
+        <br>
         <br>
         <input class="dada" type="checkbox" id="fantasy" value="Fantasy">
         <label for="fantasy">Fantasy</label>
         <br>
+        <br>
         <input class="dada" type="checkbox" id="fiction" value="Fiction">
         <label for="fiction">Fiction</label>
+        <br>
         <br>
         <input class="dada" type="checkbox" id="graphnovel" value="Graphic-Novels">
         <label for="graphnovel">Graphic Novels</label>
         <br>
+        <br>
         <input class="dada" type="checkbox" id="horror" value="Horror">
         <label for="horror">Horror</label>
+        <br>
         <br>
         <input class="dada" type="checkbox" id="mystery" value="Mystery">
         <label for="mystery">Mystery</label>
         <br>
+        <br>
         <input class="dada" type="checkbox" id="romance" value="Romance">
         <label for="romance">Romance</label>
+        <br>
         <br>
         <input class="dada" type="checkbox" id="scifi" value="Science-Fiction">
         <label for="scifi">Science Fiction</label>
         <br>
+        <br>
         <input class="dada" type="checkbox" id="thriller" value="Thriller">
         <label for="thriller">Thriller</label>
+        <br>
         <br>
         <input class="dada" type="checkbox" id="ya" value="Young-Adult">
         <label for="ya">Young Adult</label>
       </div>
       <div>
         <h1></h1>
-        <input type="button" value="Submit" id="submit" style="font-size: 100px; padding-top: 50px; padding-bottom: 50px;">
+        <input type="button" value="Submit" id="submit" style="width: 100%!important; font-size: 50px!important; padding-top: 50px; padding-bottom: 50px;">
       </div>
       <div>
-        <p id="result"></p>
+        <!--<p id="result"></p>-->
       </div>
     </form>
 
     <!-- Books -->
     <section class="carousel">
       <div class="carousel__container">
-        <!-- The Name of the Wind -->
-        <div class="carousel-item genre-fantasy hidden">
-          <img class="carousel-item__img" src="https://prodimage.images-bn.com/pimages/9780316310321_p0_v1_s550x406.jpg"/>
+        <!-- The Call of the Wild -->
+        <a style="text-decoration: none; color: white;" href="books/thecallofthewild.html"><div class="carousel-item genre-classics hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/81+9w5nFMDL.jpg"/>
           <div class="carousel-item__details">
             <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href="books/thenameofthewind.html">The Name of the Wind</a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href="fantasy.html">Fantasy</a></h6>
+            <h3 class="carousel-item__details--title">The Call of the Wild</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="classic.html">Classic</a></h4>
           </div>
-        </div>
-        <!-- Shout -->
-        <div class="carousel-item genre-mystery hidden">
-          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2F3e820720-202e-44d4-abe7-1ccc783f6ae6.image.png?v=1595274535581"/>
+        </div></a>
+        <!-- 1984 -->
+        <a style="text-decoration: none; color: white;" href="books/nineteeneightyfour.html"><div class="carousel-item genre-classics genre-science-fiction hidden">
+          <img class="carousel-item__img" src="https://i.pinimg.com/736x/12/f5/17/12f5174c407b960e57d920174d558fa6.jpg"/>
           <div class="carousel-item__details">
             <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href="shout.html">Shout</a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href="mystery.html">Mystery</a></h6>
+            <h3 class="carousel-item__details--title">1984</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="classic.html">Classic</a>, <a style="text-decoration: none; color: white;" href="sci-fi.html">Science Fiction</a></h4>
           </div>
-        </div>
-        <!-- The Testaments -->
-        <div class="carousel-item genre-science-fiction hidden">
-          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2Fed6e080c-16d1-4caf-82d3-3c36c43881ff.image.png?v=1595274803820"/>
+        </div></a>
+        <!-- The Godfather -->
+        <a style="text-decoration: none; color: white;" href="books/thegodfather.html"><div class="carousel-item genre-classics genre-fiction hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/710UiPmLZ3L.jpg"/>
           <div class="carousel-item__details">
             <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href="thetestaments.html">The Testaments</a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href="sci-fi.html">Science Fiction</a></h6>
+            <h3 class="carousel-item__details--title">The Godfather</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="classic.html">Classic</a>, <a style="text-decoration: none; color: white;" href="fic.html">Fiction</a></h4>
           </div>
-        </div>
-        <!-- The Institute -->
-        <div class="carousel-item genre-horror genre-science-fiction genre-thriller hidden">
-          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2Fb42aa779-ffe0-4b5d-9c80-5a427d6896df.image.png?v=1595275610531"/>
+        </div></a>
+        <!-- The Kite Runner -->
+        <a style="text-decoration: none; color: white;" href="books/kiterunner.html"><div class="carousel-item genre-classics hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/81RUfP0ZOjL.jpg"/>
           <div class="carousel-item__details">
             <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href="theinstitute.html">The Institute</a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href="horror.html">Horror</a>, <a href="sci-fi.html">Science Fiction</a>, <a href="genre-thriller">Thriller</a></h6>
-          </div>
+            <h3 class="carousel-item__details--title">The Kite Runner</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="classic.html">Classic</a></h4>
         </div>
+        </div></a>
+        <!-- To Kill A Mockingbird -->
+        <a style="text-decoration: none; color: white;" href="books/tokillamockingbird.html"><div class="carousel-item genre-classics hidden">
+          <img class="carousel-item__img" src="https://www.penguin.co.uk/content/dam/prh/books/108/1088099/9781784752637.jpg.transform/PRHDesktopWide_small/image.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">To Kill A Mockingbird</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="classic.html">Classic</a></h4>
+          </div>
+        </div></a>
+        <!-- The Catcher in the Rye -->
+        <a style="text-decoration: none; color: white;" href="books/thecatcherintherye.html"><div class="carousel-item genre-classics hidden">
+          <img class="carousel-item__img" src="https://www.pluggedin.com/wp-content/uploads/2020/01/catcher-in-the-rye-cover-image-682x1024.jpeg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Catcher in the Rye</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="classic.html">Classic</a></h4>
+          </div>
+        </div></a>
+        <!-- Pride & Prejudice -->
+        <a style="text-decoration: none; color: white;" href="books/prideandprejudice.html"><div class="carousel-item genre-classics genre-romance hidden">
+          <img class="carousel-item__img" src="https://www.thehauntedbookshopmobile.com/uploads/1/2/8/3/128386604/s920965166903162205_p14624_i7_w400.jpeg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Pride & Prejudice</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="classic.html">Classic</a>, <a style="text-decoration: none; color: white;" href="romance.html">Romance</a></h4>
+          </div>
+        </div></a>
+        <!-- Dracula -->
+        <a style="text-decoration: none; color: white;" href="books/dracula.html"><div class="carousel-item genre-classics genre-horror hidden">
+          <img class="carousel-item__img" src="https://m.media-amazon.com/images/I/51M0okPhZoL.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Dracula</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="classic.html">Classic</a>, <a style="text-decoration: none; color: white;" href="horror.html">Horror</a></h4>
+          </div>
+        </div></a>
         <!-- The Wicked King -->
-        <div class="carousel-item genre-fantasy genre-young-adult hidden">
+        <a style="text-decoration: none; color: white;" href="books/thewickedking.html"><div class="carousel-item genre-fantasy genre-young-adult hidden">
           <img class="carousel-item__img" src="https://prodimage.images-bn.com/pimages/9780316310321_p0_v1_s550x406.jpg"/>
           <div class="carousel-item__details">
             <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href="thewickedking.html">The Wicked King</a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href="fantasy.html">Fantasy</a>, <a href="ya.html">Young Adult</a></h6>
+            <h3 class="carousel-item__details--title">The Wicked King</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fantasy.html">Fantasy</a>, <a style="text-decoration: none; color: white;" href="ya.html">Young Adult</a></h4>
           </div>
-        </div>
-        <!-- The Silent Patient -->
-        <div class="carousel-item genre-mystery genre-thriller hidden">
-          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/61AFJnUo3mL.jpg"/>
+        </div></a>
+        <!-- The Name of the Wind -->
+        <a style="text-decoration: none; color: white;" href="books/thenameofthewind.html"><div class="carousel-item genre-fantasy hidden">
+          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2F530812bf-028f-44c1-a218-61b63d5210f0.image.png?v=1595274345690"/>
           <div class="carousel-item__details">
             <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href="thesilentpatient.html">The Silent Patient</a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href="mystery.html">Mystery</a>, <a href="thriller.html">Thriller</a></h6>
+            <h3 class="carousel-item__details--title">The Name of the Wind</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fantasy.html">Fantasy</a></h4>
           </div>
-        </div>
-        <!-- Recursion -->
-        <div class="carousel-item genre-science-fiction hidden">
-          <img class="carousel-item__img" src="https://images.penguinrandomhouse.com/cover/9781524759797"/>
+        </div></a>
+        <!-- Twilight -->
+        <a style="text-decoration: none; color: white;" href="books/twilight.html"><div class="carousel-item genre-fantasy genre-horror genre-romance hidden">
+          <img class="carousel-item__img" src="https://upload.wikimedia.org/wikipedia/en/1/1d/Twilightbook.jpg"/>
           <div class="carousel-item__details">
             <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href="recursion.html">Recursion</a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href="sci-fi.html">Science Fiction</a></h6>
+            <h3 class="carousel-item__details--title">Twilight</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fantasy.html">Fantasy</a>, <a style="text-decoration: none; color: white;" href="horror.html">Horror</a>, <a style="text-decoration: none; color: white;" href="romance.html">Romance</a></h4>
           </div>
-        </div>
-        <!-- The Tyrant's Tomb -->
-        <div class="carousel-item genre-fiction hidden">
-          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/91UnxEI-Z5L.jpg"/>
+        </div></a>
+        <!-- A Game of Thrones -->
+        <a style="text-decoration: none; color: white;" href="books/thegameofthrones.html"><div class="carousel-item genre-fantasy hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/91dSMhdIzTL.jpg"/>
           <div class="carousel-item__details">
             <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href="thetyrantstomb.html">The Tyrant's Tomb</a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href="fic.html">Fiction</a></h6>
+            <h3 class="carousel-item__details--title">A Game of Thrones</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fantasy.html">Fantasy</a></h4>
           </div>
-        </div>
-        <!-- Pumpkinheads -->
-        <div class="carousel-item genre-graphic-novels hidden">
-          <img class="carousel-item__img" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1552060459l/44306231._SX318_.jpg"/>
+        </div></a>
+        <!-- The Philosopher's Stone -->
+        <a style="text-decoration: none; color: white;" href="books/thephilosopherstone.html"><div class="carousel-item genre-fantasy genre-fiction hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/51ifu1aebKL._SX332_BO1,204,203,200_.jpg"/>
           <div class="carousel-item__details">
             <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href="pumpkinheads.html">Pumpkinheads</a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href="novel.html">Graphic Novel</a></h6>
+            <h3 class="carousel-item__details--title">The Sorcerer's Stone</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fantasy.html">Fantasy</a>, <a style="text-decoration: none; color: white;" href="fic.html">Fiction</a></h4>
           </div>
-        </div>
+        </div></a>
+        <!-- The Fellowship of the Ring -->
+        <a style="text-decoration: none; color: white;" href="books/thefellowshipofthering.html"><div class="carousel-item genre-fantasy genre-fiction hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/91jBdaRVqML.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Fellowship of the Ring</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fantasy.html">Fantasy</a>, <a style="text-decoration: none; color: white;" href="fic.html">Fiction</a></h4>
+          </div>
+        </div></a>
+        <!-- The Hobbit -->
+        <a style="text-decoration: none; color: white;" href="books/thehobbit.html"><div class="carousel-item genre-fantasy hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/41W5CdiJJ5L._SX306_BO1,204,203,200_.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Hobbit</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fantasy.html">Fantasy</a></h4>
+          </div>
+        </div></a>
+        <!-- Mr. Nobody -->
+        <a style="text-decoration: none; color: white;" href="books/mrnobody.html"><div class="carousel-item genre-fantasy genre-romance genre-science-fiction hidden">
+          <img class="carousel-item__img" src="https://pbs.twimg.com/media/EBwvO8PWwAAHEth.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Mr. Nobody</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fantasy.html">Fantasy</a>, <a style="text-decoration: none; color: white;" href="romance.html">Romance</a>, <a style="text-decoration: none; color: white;" href="sci-fi.html">Science Fiction</a></h4>
+          </div>
+        </div></a>
+        <!-- Tyrant's Tomb -->
+        <a style="text-decoration: none; color: white;" href="books/tyrantstomb.html"><div class="carousel-item genre-fiction hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/81+AhaPcYwL.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Tyrant's Tomb</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fic.html">Fiction</a></h4>
+          </div>
+        </div></a>
         <!-- Daisy Jones & The Six -->
-        <div class="carousel-item genre-fiction genre-romance hidden">
+        <a style="text-decoration: none; color: white;" href="books/daisyjonesandthesix.html"><div class="carousel-item genre-fiction genre-romance hidden">
           <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2F320bd362-3d33-41eb-bc87-8c72d7f384b3.image.png?v=1595276002590"/>
           <div class="carousel-item__details">
             <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href="daisyjonesandthesix.html">Daisy Jones & The Six</a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href="fic.html">Fiction</a>, <a href="romance.html">Romance</a></h6>
+            <h3 class="carousel-item__details--title">Daisy Jones & The Six</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fic.html">Fiction</a>, <a style="text-decoration: none; color: white;" href="romance.html">Romance</a></h4>
           </div>
-        </div>
+        </div></a>
         <!-- The Heartbreakers -->
-        <div class="carousel-item genre-fiction genre-romance hidden">
+        <a style="text-decoration: none; color: white;" href="books/theheartbreakers.html"><div class="carousel-item genre-fiction genre-romance hidden">
           <img class="carousel-item__img" src="https://m.media-amazon.com/images/I/51vhejJoziL.jpg"/>
           <div class="carousel-item__details">
             <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href="theheartbreakers.html">The Heartbreakers</a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href="fic.html">Fiction</a>, <a href="romance.html">Romance</a></h6>
+            <h3 class="carousel-item__details--title">The Heartbreakers</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fic.html">Fiction</a>, <a style="text-decoration: none; color: white;" href="romance.html">Romance</a></h4>
           </div>
-        </div>
+        </div></a>
         <!-- 13 Gifts -->
-        <div class="carousel-item genre-fiction hidden">
+        <a style="text-decoration: none; color: white;" href="books/thirteengifts.html"><div class="carousel-item genre-fiction hidden">
           <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/71+nP8c5R9L.jpg"/>
           <div class="carousel-item__details">
             <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href="thirteengifts.html">13 Gifts</a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href="fic.html">Fiction</a></h6>
+            <h3 class="carousel-item__details--title">13 Gifts</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fic.html">Fiction</a></h4>
           </div>
-        </div>
+        </div></a>
+        <!-- The Book Thief -->
+        <a style="text-decoration: none; color: white;" href="books/thebookthief.html"><div class="carousel-item genre-fiction genre-graphic-novel genre-young-adult hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/9123eop9gIL.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Book Thief</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fic.html">Fiction</a>, <a style="text-decoration: none; color: white;" href="novel.html">Novel</a>, <a style="text-decoration: none; color: white;" href="ya.html">Young Adult</a></h4>
+          </div>
+        </div></a>
+        <!-- The Fault In Our Stars -->
+        <a style="text-decoration: none; color: white;" href="books/thefaultinourstars.html"><div class="carousel-item genre-fiction genre-romance genre-young-adult hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/51wYKYJo8EL._SX338_BO1,204,203,200_.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Fault In Our Stars</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fic.html">Fiction</a>, <a style="text-decoration: none; color: white;" href="romance.html">Romance</a>, <a style="text-decoration: none; color: white;" href="ya.html">Young Adult</a></h4>
+          </div>
+        </div></a>
+        <!-- Pumpkinheads -->
+        <a style="text-decoration: none; color: white;" href="books/pumpkinheads.html"><div class="carousel-item genre-graphic-novels hidden">
+          <img class="carousel-item__img" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1552060459l/44306231._SX318_.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Pumpkinheads</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fic.html">Fiction</a>, <a style="text-decoration: none; color: white;" href="romance.html">Romance</a>, <a style="text-decoration: none; color: white;" href="novel.html">Graphic Novel</a></h4>
+          </div>
+        </div></a>
+        <!-- Strange Planet -->
+        <a style="text-decoration: none; color: white;" href="books/strangeplanet.html"><div class="carousel-item genre-graphic-novels hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/9123eop9gIL.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Strange Planet</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="novel.html">Graphic Novel</a></h4>
+          </div>
+        </div></a>
+        <!-- Happily Ever After & Everything In Between -->
+        <a style="text-decoration: none; color: white;" href="books/happily.html"><div class="carousel-item genre-graphic-novels hidden">
+          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2F7992a8dd-c8b7-400a-9632-290b8499aa57.image.png?v=1595449370969"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Happily Ever After</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="novel.html">Graphic Novel</a></h4>
+          </div>
+        </div></a>
+        <!-- Avatar -->
+        <a style="text-decoration: none; color: white;" href="books/avatar.html"><div class="carousel-item genre-graphic-novels hidden">
+          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2Fa45318d2-9720-4ebd-b3cd-311f064e851d.image.png?v=1595449778342"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title"><a style="text-decoration: none; color: white;" href="books/avatar.html">Avatar: The Last Airbender</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="novel.html">Graphic Novel</a></h4>
+          </div>
+        </div></a>
+        <!-- Primer -->
+        <a style="text-decoration: none; color: white;" href="books/primer.html"><div class="carousel-item genre-graphic-novels hidden">
+          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2F9ea4b24d-a7ba-41f3-b7aa-9675d0289cbc.image.png?v=1595449684720"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Primer</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="novel.html">Graphic Novel</a></h4>
+          </div>
+        </div></a>
+        <!-- You Brought Me The Ocean -->
+        <a style="text-decoration: none; color: white;" href="books/youbroughtmetheocean.html"><div class="carousel-item genre-graphic-novels hidden">
+          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2F10d1831e-a783-48ad-9f5b-e7c6d7027675.image.png?v=1595450191978"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">You Brought Me The Ocean</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="novel.html">Graphic Novel</a></h4>
+          </div>
+        </div></a>
+        <!-- The Cardboard Kingdom -->
+        <a style="text-decoration: none; color: white;" href="books/thecardboardkingdom.html"><div class="carousel-item genre-fiction genre-graphic-novels hidden">
+          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2Fd4c12e3d-62e3-4445-bcb5-5181b21f0c25.image.png?v=1595450364021"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Cardboard Kingdom</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fic.html">Fiction</a>, <a style="text-decoration: none; color: white;" href="novel.html">Graphic Novel</a></h4>
+          </div>
+        </div></a>
+        <!-- The Institute -->
+        <a style="text-decoration: none; color: white;" href="books/theinstitute.html"><div class="carousel-item genre-horror genre-science-fiction genre-thriller hidden">
+          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2F649bc535-b212-4176-8ae1-025fe4be5389.image.png?v=1595275620767"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Institute</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="horror.html">Horror</a>, <a style="text-decoration: none; color: white;" href="sci-fi.html">Science Fiction</a>, <a style="text-decoration: none; color: white;" href="thriller.html">Thriller</a></h4>
+          </div>
+        </div></a>
+        <!-- Carrie -->
+        <a style="text-decoration: none; color: white;" href="books/carrie.html"><div class="carousel-item genre-horror hidden">
+          <img class="carousel-item__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQK3iy-ihCuW-yFKNQAbxhf6NtLWTYXk0rzew&usqp=CAU"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Carrie</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="horror.html">Horror</a></h4>
+          </div>
+        </div></a>
+        <!-- PenPal -->
+        <a style="text-decoration: none; color: white;" href="books/penpal.html"><div class="carousel-item genre-horror genre-thriller hidden">
+          <img class="carousel-item__img" src="https://whatjessreadsblog.files.wordpress.com/2018/07/img_8394.jpg?w=1200"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">PenPal</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="horror.html">Horror</a>, <a style="text-decoration: none; color: white;" href="thriller.html">Thriller</a></h4>
+          </div>
+        </div></a>
+        <!-- The Face That Must Die -->
+        <a style="text-decoration: none; color: white;" href="books/thefacethatmustdie.html"><div class="carousel-item genre-horror hidden">
+          <img class="carousel-item__img" src="http://prodimage.images-bn.com/pimages/2940011164446.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Face That Must Die</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="horror.html">Horror</a></h4>
+          </div>
+        </div></a>
+        <!-- Carrion Comfort -->
+        <a style="text-decoration: none; color: white;" href="books/carrioncomfort.html"><div class="carousel-item genre-horror hidden">
+          <img class="carousel-item__img" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388203579l/11286.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Carrion Comfort</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="horror.html">Horror</a></h4>
+          </div>
+        </div></a>
+        <!-- The Exorcist -->
+        <a style="text-decoration: none; color: white;" href="books/theexorcist.html"><div class="carousel-item genre-horror hidden">
+          <img class="carousel-item__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjAKUQU2UG5GRu2TRLKOYZbRng6JhPj11JUg&usqp=CAU"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Exorcist</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="horror.html">Horror</a></h4>
+          </div>
+        </div></a>
+        <!-- Anna Dressed IN Blood -->
+        <div class="carousel-item genre-horror hidden">
+          <img class="carousel-item__img" src="https://target.scene7.com/is/image/Target/GUEST_16efb263-d128-482f-991b-dc5b52158c36?wid=488&hei=488&fmt=pjpeg"/>
+          <a style="text-decoration: none; color: white;" href="books/anna.html"><div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Anna Dressed In Blood</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="horror.html">Horror</a></h4>
+          </div>
+        </div></a>
+        <!-- The Silent Patient -->
+        <a style="text-decoration: none; color: white;" href="books/thesilentpatient.html"><div class="carousel-item genre-mystery genre-thriller hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/61AFJnUo3mL.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Silent Patient</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="mystery.html">Mystery</a>, <a style="text-decoration: none; color: white;" href="thriller.html">Thriller</a></h4>
+          </div>
+        </div></a>
+        <!-- Shout -->
+        <a style="text-decoration: none; color: white;" href="books/shout.html"><div class="carousel-item genre-mystery hidden">
+          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2Fb8fad2bf-6379-428c-9796-edb7e74d7b73.image.png?v=1595274519184"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Shout</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="mystery.html">Mystery</a></h4>
+          </div>
+        </div></a>
+        <!-- The Glass Hotel -->
+        <a style="text-decoration: none; color: white;" href="books/theglasshotel.html"><div class="carousel-item genre-mystery hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/71+K3uJwN3L.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Glass Hotel</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="mystery.html">Mystery</a></h4>
+          </div>
+        </div></a>
+        <!-- Long Bright River -->
+        <a style="text-decoration: none; color: white;" href="books/longbrightriver.html"><div class="carousel-item genre-mystery genre-thriller hidden">
+          <img class="carousel-item__img" src="https://m.media-amazon.com/images/I/51Cdq-YP2rL.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Long Bright River</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="mystery.html">Mystery</a>, <a style="text-decoration: none; color: white;" href="thriller.html">Thriller</a></h4>
+          </div>
+        </div></a>
+        <!-- Behind Every Lie -->
+        <a style="text-decoration: none; color: white;" href="books/behindeverylie.html"><div class="carousel-item genre-mystery genre-thriller hidden">
+          <img class="carousel-item__img" src="https://target.scene7.com/is/image/Target/GUEST_83fd18a3-0769-4176-a96a-b1005d56120d?wid=488&hei=488&fmt=pjpeg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Behind Every Lie</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="mystery.html">Mystery</a>, <a style="text-decoration: none; color: white;" href="thriller.html">Thriller</a></h4>
+          </div>
+        </div></a>
+        <!-- Her Perfect Life -->
+        <a style="text-decoration: none; color: white;" href="books/herperfectlife.html"><div class="carousel-item genre-fiction genre-mystery genre-thriller hidden">
+          <img class="carousel-item__img" src="https://target.scene7.com/is/image/Target/GUEST_33672787-e3f5-400d-9d71-a9eceafd783e?wid=488&hei=488&fmt=pjpeg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Her Perfect Life</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fic.html">Fiction</a>, <a style="text-decoration: none; color: white;" href="mystery.html">Mystery</a>, <a style="text-decoration: none; color: white;" href="thriller.html">Thriller</a></h4>
+          </div>
+        </div></a>
+        <!-- Gone Girl -->
+        <a style="text-decoration: none; color: white;" href="books/gonegirl.html"><div class="carousel-item genre-mystery genre-thriller hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/71303FC9n7L.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Gone Girl</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="mystery.html">Mystery</a>, <a style="text-decoration: none; color: white;" href="thriller.html">Thriller</a></h4>
+          </div>
+        </div></a>
+        <!-- The Woman In White -->
+        <a style="text-decoration: none; color: white;" href="books/thewomaninwhite.html"><div class="carousel-item genre-mystery hidden">
+          <img class="carousel-item__img" src="https://images-cdn.reedsy.com/discovery/image/1950/image/large_114835b27453c78d107886f047e2490b0334dab5.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Woman In White</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="mystery.html">Mystery</a></h4>
+          </div>
+        </div></a>
+        <!-- Pride & Prejudice -->
+        <a style="text-decoration: none; color: white;" href="books/prideandprejudice.html"><div class="carousel-item genre-romance hidden">
+          <img class="carousel-item__img" src="https://www.thehauntedbookshopmobile.com/uploads/1/2/8/3/128386604/s920965166903162205_p14624_i7_w400.jpeg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Pride & Prejudice</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="romance.html">Romance</a></h4>
+          </div>
+        </div></a>
+        <!-- The First Kiss Hypothesis -->
+        <a style="text-decoration: none; color: white;" href="books/thefirstkisshypothesis.html"><div class="carousel-item genre-fiction genre-romance genre-young-adult hidden">
+          <img class="carousel-item__img" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1509387672l/36407964._SY475_.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The First Kiss Hypothesis</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="fiction.html">Fiction</a>, <a style="text-decoration: none; color: white;" href="romance.html">Romance</a>, <a style="text-decoration: none; color: white;" href="ya.html">Young Adult</a></h4>
+          </div>
+        </div></a>
+        <!-- Recursion -->
+        <a style="text-decoration: none; color: white;" href="books/recursion.html"><div class="carousel-item genre-science-fiction hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/81E0o11MkdL.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Recursion</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="sci-fi.html">Science Fiction</a></h4>
+          </div>
+        </div></a>
+        <!-- The Testaments -->
+        <a style="text-decoration: none; color: white;" href="books/thetestaments.html"><div class="carousel-item genre-science-fiction hidden">
+          <img class="carousel-item__img" src="https://cdn.glitch.com/82af02a2-d7b4-4dc8-a00b-c734d75ddef6%2Fed6e080c-16d1-4caf-82d3-3c36c43881ff.image.png?v=1595274803820"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Testaments</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="sci-fi.html">Science Fiction</a></h4>
+          </div>
+        </div></a>
+        <!-- The Hunger Games -->
+        <a style="text-decoration: none; color: white;" href="books/thehungergames.html"><div class="carousel-item genre-science-fiction genre-thriller hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/61JfGcL2ljL.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Hunger Games</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="sci-fi.html">Science Fiction</a>, <a style="text-decoration: none; color: white;" href="thriller.html">Thriller</a></h4>
+          </div>
+        </div></a>
+        <!-- The Hitchhiker's Guide to the Galaxy -->
+        <a style="text-decoration: none; color: white;" href="books/theguidethegalaxy.html"><div class="carousel-item genre-science-fiction hidden">
+          <img class="carousel-item__img" src="https://m.media-amazon.com/images/I/51X7zBMf9bL.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Hitchhiker's Guide to the Galaxy</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="sci-fi.html">Science Fiction</a></h4>
+          </div>
+        </div></a>
+        <!-- The Vanished Birds -->
+        <a style="text-decoration: none; color: white;" href="books/thevanishedbirds.html"><div class="carousel-item genre-science-fiction hidden">
+          <img class="carousel-item__img" src="https://dyn.media.titanbooks.com/dv9n5e5aBeji0vPo9f8A_OOWObo=/fit-in/600x600/filters:format(webp)/https://media.titanbooks.com/catalog/products/VanishedBirds.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Vanished Birds</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="sci-fi.html">Science Fiction</a></h4>
+          </div>
+        </div></a>
+        <!-- Darling Rose Gold -->
+        <a style="text-decoration: none; color: white;" href="books/darlingrosegold.html"><div class="carousel-item genre-thriller hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/91uVnyYMa+L.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Darling Rose Gold</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="thriller.html">Thriller</a></h4>
+          </div>
+        </div></a>
+        <!-- The Other Mrs. -->
+        <a style="text-decoration: none; color: white;" href="books/theothermrs.html"><div class="carousel-item genre-thriller hidden">
+          <img class="carousel-item__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSWpniJvXcjgUtG75SIUAwyflLVa4wCcublEA&usqp=CAU"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Other Mrs.</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="thriller.html">Thriller</a></h4>
+          </div>
+        </div></a>
+        <!-- Lord of the Flies -->
+        <a style="text-decoration: none; color: white;" href="books/lordoftheflies.html"><div class="carousel-item genre-young-adult hidden">
+          <img class="carousel-item__img" src="https://images-na.ssl-images-amazon.com/images/I/81WUAoL-wFL.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Lord of the Flies</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="ya.html">Young Adult</a></h4>
+          </div>
+        </div></a>
+        <!-- The Hate U Give -->
+        <a style="text-decoration: none; color: white;" href="books/thehateugive.html"><div class="carousel-item genre-young-adult hidden">
+          <img class="carousel-item__img" src="https://www.olsonlibrary.org/2018/wp-content/uploads/2018/10/the-hate-u-give.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Hate U Give</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="ya.html">Young Adult</a></h4>
+          </div>
+        </div></a>
+        <!-- Looking For Alaska -->
+        <a style="text-decoration: none; color: white;" href="books/lookingforalaska.html"><div class="carousel-item genre-young-adult hidden">
+          <img class="carousel-item__img" src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0074/9780007424832.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">Looking For Alaska</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="ya.html">Young Adult</a></h4>
+          </div>
+        </div></a>
+        <!-- The Perks of Being A Wallflower -->
+        <a style="text-decoration: none; color: white;" href="books/theperksofbeingawallflower.html"><div class="carousel-item genre-young-adult hidden">
+          <img class="carousel-item__img" src="https://rajatu.files.wordpress.com/2014/08/the-perks-of-being-a-wallflower-main.jpg"/>
+          <div class="carousel-item__details">
+            <div class="controls"></div>
+            <h3 class="carousel-item__details--title">The Perks of Being A Wallflower</h3>
+            <h4 class="carousel-item__details--subtitle"><a style="text-decoration: none; color: white;" href="ya.html">Young Adult</a></h4>
+          </div>
+        </div></a>
         <!--  -->
-        <div class="carousel-item genre-fantasy hidden">
+        <!--<div class="carousel-item genre- hidden">
           <img class="carousel-item__img" src=""/>
           <div class="carousel-item__details">
             <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href=""></a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
+            <h3 class="carousel-item__details--title"><a href="books/.html"></a></h3>
+            <h4 class="carousel-item__details--subtitle"><a href=".html"></a>, <a href=".html"></a></h4>
           </div>
-        </div>
-        <!-- The Call of the Wild -->
-        <div class="carousel-item genre-classic hidden">
-          <img class="carousel-item__img" src=""/>
-          <div class="carousel-item__details">
-            <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href=""></a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
-          </div>
-        </div>
-        <!--  -->
-        <div class="carousel-item genre-fantasy hidden">
-          <img class="carousel-item__img" src=""/>
-          <div class="carousel-item__details">
-            <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href=""></a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
-          </div>
-        </div>
-        <!--  -->
-        <div class="carousel-item genre-fantasy hidden">
-          <img class="carousel-item__img" src=""/>
-          <div class="carousel-item__details">
-            <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href=""></a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
-          </div>
-        </div>
-        <!--  -->
-        <div class="carousel-item genre-fantasy hidden">
-          <img class="carousel-item__img" src=""/>
-          <div class="carousel-item__details">
-            <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href=""></a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
-          </div>
-        </div>
-        <!--  -->
-        <div class="carousel-item genre-fantasy hidden">
-          <img class="carousel-item__img" src=""/>
-          <div class="carousel-item__details">
-            <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href=""></a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
-          </div>
-        </div>
-        <!--  -->
-        <div class="carousel-item genre-fantasy hidden">
-          <img class="carousel-item__img" src=""/>
-          <div class="carousel-item__details">
-            <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href=""></a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
-          </div>
-        </div>
-        <!--  -->
-        <div class="carousel-item genre-fantasy hidden">
-          <img class="carousel-item__img" src=""/>
-          <div class="carousel-item__details">
-            <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href=""></a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
-          </div>
-        </div>
-        <!--  -->
-        <div class="carousel-item genre-fantasy hidden">
-          <img class="carousel-item__img" src=""/>
-          <div class="carousel-item__details">
-            <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href=""></a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
-          </div>
-        </div>
-        <!--  -->
-        <div class="carousel-item genre-fantasy hidden">
-          <img class="carousel-item__img" src=""/>
-          <div class="carousel-item__details">
-            <div class="controls"></div>
-            <h5 class="carousel-item__details--title"><a href=""></a></h5>
-            <h6 class="carousel-item__details--subtitle"><a href=""></a></h6>
-          </div>
-        </div>
+        </div>-->
     </section>
 
     <script>
@@ -303,7 +637,7 @@
           return
         } 
         else {
-          result.innerHTML += "Hi "
+          result.innerHTML += "Check out your recommendations "
           result.innerHTML += firstName.value + "!"
           result.innerHTML += "<br><br>"
         }
